@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import demo from "./demo";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,17 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    children: [
+      {
+        path: "/mainPage",
+        name: "mainPage",
+        meta: {
+          tabname: "首页",
+        },
+        component: demo,
+      },
+    ],
+    // .concat(demo),
   },
   {
     path: "/about",
