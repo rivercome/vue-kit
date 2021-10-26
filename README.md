@@ -6,8 +6,10 @@
 []- axios
 []- 常用组件二次封装
 [x]- 按需加载
+[]-日志打印
+[]-vue.config 配置
   
-
+## 业务场景
 ## 编辑器
  + VsCode
     + 需要安装Vetur, Prettier插件
